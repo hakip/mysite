@@ -1,0 +1,14 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<h1>{{ question.question_text }}</h1>
+{% if error_message %} <p> {{ error_message }} </p> {% endif %}
+<form action="{% url 'polls:vote' question.id %}" method="POST">
+	{% csrf_token %}
+	{% for choice in question.choice_set.all %}
+		<input type="radio" name="choice" id="choice{{ forloop.counter}}" value="{{ choice.id }}">
+		<label>{{ choice.choice_text }} </label><br>
+	{% endfor %}
+	<input type="submit" name="Vote">
+</form>
