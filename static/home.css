@@ -1,0 +1,40 @@
+* {
+	margin:0;
+	padding: 0;
+}
+body {
+	background-image: url('images/bggif.gif');
+	background-position: center;
+}
+div#centerbox {
+	width: 700px;
+	height: 500px;
+	margin: 40px auto;
+	overflow: auto;
+	background-color: LightGray;
+}
+div#header {
+	width: 600px;
+	margin: 40px auto;
+	padding: 10px;
+	border: 10px solid green;
+	font-family: Verdana;
+	text-align: center;
+}
+div#content {
+	color: green;
+	font-family: Time New Roman;
+}
+div#login {
+	width: 150px;
+	margin: 20px auto;
+	background-color: red;
+	color: white;
+	text-align: center;
+}
+a:hover{
+	text-decoration: none;
+}
+div#login:hover {
+	background-color: black;
+}
