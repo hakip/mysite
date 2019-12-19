@@ -18,9 +18,9 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    # path('', include('polls.urls')),
     path('', views.IndexView.as_view(), name='index'),
-    path('account/', include('django.contrib.auth.urls'), name="login"),
+    path('home/', views.HomeView.as_view(), name='home'),
+    path('accounts/', include('django.contrib.auth.urls'), name="login"),
     path('admin/', admin.site.urls),
     path('polls', include('polls.urls')),
     path('blog', include('blog.urls')),
