@@ -1,0 +1,24 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: LightGray;
+}
+#centerbox {
+	width: 500px;
+	margin: 150px auto;
+	text-align: center;
+}
+#inner {
+	width: 260px;
+	margin: auto;
+}
+form {
+	background-color: white;
+	border: 1px solid black;
+
+}
+input#submit {
+	width: 100px;
+}

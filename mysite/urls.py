@@ -21,8 +21,14 @@ urlpatterns = [
     path('', views.IndexView.as_view(), name='index'),
     path('home/', views.HomeView.as_view(), name='home'),
     path('accounts/', include('django.contrib.auth.urls'), name="login"),
+    path('register', views.RegisterView.as_view(), name='register'),
     path('admin/', admin.site.urls),
     path('polls', include('polls.urls')),
     path('blog', include('blog.urls')),
-
+    path('mtdt', views.HomeView.as_view(), name='mtdt'),
+    path('cdr', views.HomeView.as_view(), name='cdr'),
+    path('pi', views.HomeView.as_view(), name='pi'),
+    path('clo', views.HomeView.as_view(), name='clo'),
+    path('subject', views.HomeView.as_view(), name='subject'),
+    path('gradebook', views.HomeView.as_view(), name='gradebook'),
 ]
